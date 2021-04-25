@@ -37,7 +37,7 @@ public class StoragehandlingController {
         return storagehandlingService.get(id);
     }
 
-    /*Create a new player and store in the database */
+    /*Add a new product and store in the database */
     @PostMapping(path="/storageinformation", consumes="application/json", produces="application/json")
     @CrossOrigin()
     ResponseEntity<Object> add(@RequestBody Storagehandling p){

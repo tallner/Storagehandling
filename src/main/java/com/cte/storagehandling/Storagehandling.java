@@ -9,13 +9,9 @@ import javax.persistence.Id;
 public class Storagehandling {
 
     private String name;
-    private String link;
-    private int price;
-
-    public float calculateCustomerPrice(Float customerAddPercentage)
-    {
-        return price + (price * customerAddPercentage) / 100;
-    }
+    private String serialnumber;
+    private String location;
+    private String status;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -30,20 +26,28 @@ public class Storagehandling {
         this.name = name;
     }
 
-    public String getlink() {
-        return this.link;
+    public String getSerialnumber() {
+        return this.serialnumber;
     }
 
-    public void setlink(String link) {
-        this.link = link;
+    public void setSerialnumber(String serialnumber) {
+        this.serialnumber = serialnumber;
     }
 
-    public int getPrice() {
-        return this.price;
+    public String getLocation() {
+        return this.location;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public Integer getId() {
