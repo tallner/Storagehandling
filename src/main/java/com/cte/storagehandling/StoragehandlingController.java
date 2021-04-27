@@ -22,23 +22,23 @@ public class StoragehandlingController {
     @CrossOrigin()
     String empty()
     {
-        return "Storageinformation";
+        return "Storagehandling";
     }
 
-    @GetMapping(path="/storageinformation")
+    @GetMapping(path="/storagehandling")
     @CrossOrigin()
     List<Storagehandling> getAll(){
         return storagehandlingService.getAll();
     }
 
-    @GetMapping(path="/storageinformation/{id}")
+    @GetMapping(path="/storagehandling/{id}")
     @CrossOrigin()
     Storagehandling getSingle(@PathVariable Integer id){
         return storagehandlingService.get(id);
     }
 
     /*Add a new product and store in the database */
-    @PostMapping(path="/storageinformation", consumes="application/json", produces="application/json")
+    @PostMapping(path="/storagehandling", consumes="application/json", produces="application/json")
     @CrossOrigin()
     ResponseEntity<Object> add(@RequestBody Storagehandling p){
         return storagehandlingService.add(p);

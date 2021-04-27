@@ -16,6 +16,6 @@ services:
         restart: always
         build: 
             context: .
-        image: 172446528082.dkr.ecr.eu-north-1.amazonaws.com/storageinformation
+        image: 172446528082.dkr.ecr.eu-north-1.amazonaws.com/storagehandling
         expose:
         - "8080"

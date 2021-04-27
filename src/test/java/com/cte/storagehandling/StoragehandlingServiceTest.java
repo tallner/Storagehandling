@@ -36,7 +36,7 @@ public class StoragehandlingServiceTest {
     @Test
     void getOneShouldReturnOneRecord()
     {
-        var sut = new StorageinformationService(storageinformationRepository);
+        var sut = new StoragehandlingService(storagehandlingRepository);
       //  assertArrayEquals( testlist.toArray() ,sut.get(0));
         assertEquals(testlist.get(0), sut.get(0));    
     }

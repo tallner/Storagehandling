@@ -5,6 +5,6 @@
     },
     {
       "name": "app",
-      "imageUri": "172446528082.dkr.ecr.eu-north-1.amazonaws.com/storageinformation"
+      "imageUri": "172446528082.dkr.ecr.eu-north-1.amazonaws.com/storagehandling"
     }
   ]
